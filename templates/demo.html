@@ -1,0 +1,15 @@
+{% from 'form.html' import render_form_default %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {{ bootstrap.load_css() }}
+    {{ bootstrap.load_js() }}</head>
+    <title>Title</title>
+<body>
+    <div class="container">
+        {{ render_form_default(form, id="recaptchaForm") }}
+    </div>
+</body>
+</html>
